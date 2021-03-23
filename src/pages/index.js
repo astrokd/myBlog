@@ -1,4 +1,8 @@
 import * as React from "react"
+import Frame from "./components/frame"
+import { Link } from 'gatsby'
+import NavBar from './components/navbar'
+
 
 // styles
 const pageStyles = {
@@ -125,11 +129,43 @@ const links = [
   },
 ]
 
+// tutorial testing
+
+const hello = <h2>Hello world!</h2>
+const name = "Kevin"
+const greeting = <p>Hi {name}!</p>
+
+const ValidComponent = () => {
+  return (
+    <div>
+      <h1>A valid component!</h1>
+      <p>This will work fine.</p>
+      <p>
+        Since there is only one top-level element: the div.
+      </p>
+    </div>
+  )
+}
+
+// When the <Greeting> component is defined
+const Greeting = ({ name }) => {
+  return (
+    <p>Hi {name}</p>  
+  )
+}
+// When the <Greeting> component is rendered
+const SayHello = () => {
+  return (
+    <Greeting name="Kevin2" />
+  )
+}
+
 // markup
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
+      <NavBar activelink="Home"></NavBar>
       <h1 style={headingStyles}>
         Congratulations
         <br />
@@ -138,6 +174,16 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
+      {hello}
+      {greeting}
+      <ValidComponent></ValidComponent>
+      <SayHello></SayHello>
+      <Frame>
+        <p>This will be passed in as children</p>
+      </Frame>
+      <Link to="/about">
+        Go to the About page
+      </Link>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
