@@ -3,21 +3,8 @@ import { Link } from 'gatsby'
 
 // styles
 import { topnav, navlink, active } from './navbar.module.css'
-const navStyles = {
-  backgroundColor: '#333',
-  overflow: 'hidden',
-}
 
-const linkStyles = {
-  float: 'left',
-  color: '#f2f2f2',
-  textAlign: 'center',
-  padding: '14px 16px',
-  textDecoration: 'none',
-  fontSize: '17px',
-}
-
-const NavBar = ({ children, activelink }) => {
+const NavBar = ({ activelink }) => {
   if (activelink === "Home") {
     return (
       <div className={topnav}>
