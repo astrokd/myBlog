@@ -2,13 +2,13 @@ import React from 'react'
 import NavBar from './navbar'
 
 // styles
-import { pageStyles, headingStyles, paragraphStyles } from './layout.module.css'
+import { pageStyles, headingStyles, subHeadingStyles, paragraphStyles } from './layout.module.css'
 
 const Header = () => {
   return (
     <div>
       <h1 className={headingStyles}>My Awesome Blog</h1>
-      <p className={paragraphStyles}>by KD</p>  
+      <p className={subHeadingStyles}>by KD</p>  
     </div>
   )
 }

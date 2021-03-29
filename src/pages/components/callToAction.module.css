@@ -1,0 +1,9 @@
+.callToActionStyles {
+  background-color: beige;
+  color: midnightblue;
+  padding: 24px;
+  margin: 32px;
+  margin-right: 64px;
+  border: 5px royalblue;
+  border-radius: 5px;
+}
