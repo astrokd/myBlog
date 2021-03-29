@@ -10,6 +10,7 @@ const NavBar = ({ activelink }) => {
       <div className={topnav}>
         <Link className={active} to="/">Home page</Link>
         <Link className={navlink} to="/about">About page</Link>
+        <Link className={navlink} to="/contact">Contact page</Link>
       </div>)
   }
   if (activelink === "About") {
@@ -17,6 +18,15 @@ const NavBar = ({ activelink }) => {
       <div className={topnav}>
         <Link className={navlink} to="/">Home page</Link>
         <Link className={active} to="/about">About page</Link>
+        <Link className={navlink} to="/contact">Contact page</Link>
+      </div>)
+  }
+  if (activelink === "Contact") {
+    return (
+      <div className={topnav}>
+        <Link className={navlink} to="/">Home page</Link>
+        <Link className={navlink} to="/about">About page</Link>
+        <Link className={active} to="/contact">Contact page</Link>
       </div>)
   }
 }

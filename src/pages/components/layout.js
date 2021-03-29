@@ -2,22 +2,13 @@ import React from 'react'
 import NavBar from './navbar'
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  // padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import { pageStyles, headingStyles, paragraphStyles } from './layout.module.css'
 
 const Header = () => {
   return (
     <div>
-      <h1 style={headingStyles}>My Awesome Blog</h1>
-      <p>by KD</p>  
+      <h1 className={headingStyles}>My Awesome Blog</h1>
+      <p className={paragraphStyles}>by KD</p>  
     </div>
   )
 }
@@ -33,15 +24,19 @@ const Footer = () => {
 
 const Layout = ({ children, activelink }) => {
   return (
-    <div style={pageStyles}>
-      <Header></Header>
-      <div>
-        <NavBar activelink={activelink}></NavBar>
+    <main className={pageStyles}>
+      <title>{activelink} Page</title>
+        <Header></Header>
+      <div className={pageStyles}>
+        <div>
+          <NavBar activelink={activelink}></NavBar>
+        </div>
+        <div className={paragraphStyles}>
+          { children }
+        </div>
       </div>
-      <div>
-        { children }
-      </div>
-    </div>
+      <Footer></Footer>
+    </main>
   )
 }
 

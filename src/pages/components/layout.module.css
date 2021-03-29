@@ -1,0 +1,60 @@
+
+.pageStyles {
+  color: "#232129";
+  padding: 96;
+  font-Family: "-apple-system, Roboto, sans-serif, serif";
+}
+.headingStyles {
+  margin-Top: 0;
+  margin-Bottom: 32;
+  max-Width: 320;
+}
+
+.paragraphStyles {
+  margin-Bottom: 32;
+}
+
+/* const headingAccentStyles = {
+  color: "#663399",
+}
+const paragraphStyles = {
+  margin-Bottom: 48,
+}
+const codeStyles = {
+  color: "#8A6534",
+  padding: 4,
+  background-Color: "#FFF4DB",
+  fontSize: "1.25rem",
+  border-Radius: 4,
+}
+const listStyles = {
+  margin-Bottom: 96,
+  padding-Left: 0,
+}
+const listItemStyles = {
+  font-Weight: 300,
+  font-Size: 24,
+  max-Width: 560,
+  margin-Bottom: 30,
+}
+
+const linkStyle = {
+  color: "#8954A8",
+  font-Weight: "bold",
+  font-Size: 16,
+  vertical-Align: "5%",
+}
+
+const docLinkStyle = {
+  ...linkStyle,
+  listStyle-Type: "none",
+  margin-ottom: 24,
+}
+
+const descriptionStyle = {
+  color: "#232129",
+  font-Size: 14,
+  margin-Top: 10,
+  margin-Bottom: 0,
+  line-Height: 1.25,
+} */
