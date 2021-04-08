@@ -15,7 +15,7 @@ const IndexPage = () => {
 
         <CallToAction>This is a Call To Action</CallToAction>
         
-        <Bio showCount={20}>
+        <Bio showCount={20} showStatus={false}>
 
           This is my Bio, it will be an expandable bio, but right not it is just a simple div.
 
