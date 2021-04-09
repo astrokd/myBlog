@@ -1,31 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 // styles
 import { bioStyles } from './bio.module.css'
-
-// const Bio = ({ children, showCount, showStatus }) => {
-//   if (showStatus) {
-//     return (
-//       <div className={bioStyles}>
-//         <h3>Bio</h3>
-//         { children }
-//         <br></br>
-//         <Link to="/">Show Less</Link>
-//       </div>
-//     )
-//   } else {
-//     return (
-//       <div className={bioStyles}>
-//         <h3>Bio</h3>
-//         { children.slice( 0, showCount )}...
-//         <br></br>
-//         <Link to="/">Show More</Link>
-//       </div>
-//     )
-//   }
-
-// }
 
 class Bio extends React.Component {
   constructor(props) {
@@ -68,6 +44,5 @@ class Bio extends React.Component {
     
   }
 }
-
 
 export default Bio
