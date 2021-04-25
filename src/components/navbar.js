@@ -11,6 +11,7 @@ const NavBar = ({ activelink }) => {
         <Link className={active} to="/">Home page</Link>
         <Link className={navlink} to="/about">About page</Link>
         <Link className={navlink} to="/contact">Contact page</Link>
+        <Link className={navlink} to="/stickyMenu">Demo page</Link>
       </div>)
   }
   if (activelink === "About") {
@@ -19,6 +20,7 @@ const NavBar = ({ activelink }) => {
         <Link className={navlink} to="/">Home page</Link>
         <Link className={active} to="/about">About page</Link>
         <Link className={navlink} to="/contact">Contact page</Link>
+        <Link className={navlink} to="/stickyMenu">Demo page</Link>
       </div>)
   }
   if (activelink === "Contact") {
@@ -27,6 +29,16 @@ const NavBar = ({ activelink }) => {
         <Link className={navlink} to="/">Home page</Link>
         <Link className={navlink} to="/about">About page</Link>
         <Link className={active} to="/contact">Contact page</Link>
+        <Link className={navlink} to="/stickyMenu">Demo page</Link>
+      </div>)
+  }
+  if (activelink === "Sticky") {
+    return (
+      <div className={topnav}>
+        <Link className={navlink} to="/">Home page</Link>
+        <Link className={navlink} to="/about">About page</Link>
+        <Link className={navlink} to="/contact">Contact page</Link>
+        <Link className={active} to="/stickyMenu">Demo page</Link>
       </div>)
   }
 }
