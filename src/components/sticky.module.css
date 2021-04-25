@@ -1,0 +1,30 @@
+
+.stickyNav {
+  margin-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-x: auto;
+  overflow-y: scroll;
+  white-space: nowrap;
+  top:0;
+  width:100%;
+  z-index:100;
+  background-color: lightblue;
+}
+
+.pnt {
+  float: left;
+  background-color: whitesmoke;
+  width: 125px;
+  margin: 5px;
+  white-space: normal;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: darkblue;
+}
+.pnt:hover {
+  background-color: darkgray;
+  color: lightblue;
+}
