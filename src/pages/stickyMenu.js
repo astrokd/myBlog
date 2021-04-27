@@ -29,7 +29,7 @@ const stickyMenu = () => {
         <Layout activelink="Sticky">
           <h1 style={headingStyles}>Floating Fixed Scrolling Sticky Menu</h1>
           <a style={aStyles} href="https://www.justinmind.com/blog/awesome-lorem-ipsum-alternatives/">10 Awesome Lorem Ipsum Alternatives from Justinmind.com</a>
-
+          <p>Web page designs need content to get a feel for how they will behave, things like Lorem Ipsum are useful to generate quick content that might be representative of what the actual content will look like.</p>
           <Sticky style={stickyStyles}></Sticky>
                     
           <h2><span style={linkSpan} id="Lorem_Ipsum"> &nbsp; </span>Lorem Ipsum</h2>
@@ -59,6 +59,8 @@ const stickyMenu = () => {
           <ul>
             <li><a href="https://obamaipsum.com/">Obama Ipsum</a></li>
           </ul>
+          <h3>Other thoughts</h3>
+          <article>from Smashing Mag .com "The point I tried to make is that you and your clients need to be thinking, understanding and gathering content before the design. Using Lorem Ipsum is a way to half-heartedly go about the most important part of your site."</article>
 
         
         </Layout>

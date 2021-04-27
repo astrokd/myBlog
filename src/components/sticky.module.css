@@ -12,12 +12,17 @@
   background-color: lightblue;
 }
 
+.stickyNav span {
+  display: inline-block;
+}
+
 .pnt {
+  /* display: inline-block; */
   float: left;
   background-color: whitesmoke;
   width: 125px;
   margin: 5px;
-  white-space: normal;
+  white-space: nowrap;
   padding: 5px;
   text-align: center;
   text-decoration: none;
