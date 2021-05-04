@@ -4,6 +4,20 @@ import { Link } from 'gatsby'
 // styles
 import { topnav, navlink, active, dropdown, dropdowncontent, dropbtn, ddlink } from './navbar.module.css'
 
+const DropDown = () => {
+  return (
+    <div className={dropdown}>
+          <div className={dropbtn}>css Dropdown</div>
+          <div className={dropdowncontent}>
+            <Link className={ddlink} to="/">Home page</Link>
+            <Link className={ddlink} to="/about">About page</Link>
+            <Link className={ddlink} to="/contact">Contact page</Link>
+            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
+          </div>
+        </div>
+  )
+}
+
 const NavBar = ({ activelink }) => {
   if (activelink === "Home") {
     return (
@@ -12,15 +26,7 @@ const NavBar = ({ activelink }) => {
         <div className={navlink}><Link to="/about">About page</Link></div>
         <div className={navlink}><Link to="/contact">Contact page</Link></div>
         <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <div className={dropdown}>
-          <div className={dropbtn}>Dropdown</div>
-          <div className={dropdowncontent}>
-            <Link className={ddlink} to="/">Home page</Link>
-            <Link className={ddlink} to="/about">About page</Link>
-            <Link className={ddlink} to="/contact">Contact page</Link>
-            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
-          </div>
-        </div>
+        <DropDown></DropDown>
       </div>
       )
   }
@@ -31,15 +37,7 @@ const NavBar = ({ activelink }) => {
         <div className={active}><Link to="/about">About page</Link></div>
         <div className={navlink}><Link to="/contact">Contact page</Link></div>
         <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <div className={dropdown}>
-          <div className={dropbtn}>Dropdown</div>
-          <div className={dropdowncontent}>
-            <Link className={ddlink} to="/">Home page</Link>
-            <Link className={ddlink} to="/about">About page</Link>
-            <Link className={ddlink} to="/contact">Contact page</Link>
-            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
-          </div>
-        </div>
+        <DropDown></DropDown>
       </div>
     )
   }
@@ -50,15 +48,7 @@ const NavBar = ({ activelink }) => {
         <div className={navlink}><Link to="/about">About page</Link></div>
         <div className={active}><Link to="/contact">Contact page</Link></div>
         <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <div className={dropdown}>
-          <div className={dropbtn}>Dropdown</div>
-          <div className={dropdowncontent}>
-            <Link className={ddlink} to="/">Home page</Link>
-            <Link className={ddlink} to="/about">About page</Link>
-            <Link className={ddlink} to="/contact">Contact page</Link>
-            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
-          </div>
-        </div>
+        <DropDown></DropDown>
       </div>
     )
   }
@@ -69,15 +59,7 @@ const NavBar = ({ activelink }) => {
         <div className={navlink}><Link to="/about">About page</Link></div>
         <div className={navlink}><Link to="/contact">Contact page</Link></div>
         <div className={active}><Link to="/stickyMenu">Demo page</Link></div>
-        <div className={dropdown}>
-          <div className={dropbtn}>Dropdown</div>
-          <div className={dropdowncontent}>
-            <Link className={ddlink} to="/">Home page</Link>
-            <Link className={ddlink} to="/about">About page</Link>
-            <Link className={ddlink} to="/contact">Contact page</Link>
-            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
-          </div>
-        </div>
+        <DropDown></DropDown>
       </div>
     )
   }
