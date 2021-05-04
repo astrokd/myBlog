@@ -7,7 +7,7 @@ import { pageStyles, headingStyles, subHeadingStyles, paragraphStyles } from './
 const Header = () => {
   return (
     <div>
-      <h1 className={headingStyles}>My Awesome Blog</h1>
+      <h1 className={headingStyles}>Test Blog</h1>
       <p className={subHeadingStyles}>by KD</p>  
     </div>
   )

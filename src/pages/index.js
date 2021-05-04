@@ -11,7 +11,7 @@ const IndexPage = () => {
     <>
       <Layout activelink="Home">
 
-        Welcome to my Home Page, this is my porfolio of work.
+        <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
 
         <CallToAction>This is a Call To Action</CallToAction>
         

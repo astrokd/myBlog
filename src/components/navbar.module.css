@@ -1,32 +1,90 @@
+:root {
+  --menu-font-size: 17px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
+  width: 100%;
   background-color: #333;
-  overflow: hidden;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.navlink, .active {
+  float: left;
 }
 
 /* Style the links inside the navigation bar */
-.navlink {
+.navlink a, .active a {
+  background-color: #333;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: var(--menu-font-size);
 }
 
 /* Change the color of links on hover */
-.navlink:hover {
+.navlink:hover a{
   background-color: #ddd;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.active {
+.active a{
   background-color: #8954A8;
-  color: white;
-  float: left;
-  text-align: center;
+}
+
+/* Dropdown css */
+.dropdown {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--menu-font-size);
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn {
+  display: block;
+  color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+}
+
+.dropdowncontent {
+  display:none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 120px;
+  font-size: var(--menu-font-size);
+  z-index: 1;
+}
+
+.ddlink, .dropbtn {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: var(--menu-font-size);
+  height: 20px;
+}
+
+.dropdowncontent .ddlink {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdowncontent, .dropdown:hover, .dropdown:hover .dropbtn {
+  display: block;
+  background-color: #ddd;
+  color: black;
+}
+
+.ddlink:hover {
+  background-color:aliceblue;
 }
