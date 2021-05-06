@@ -2,13 +2,13 @@ import React from 'react'
 import VCLayout from '../components/vclayout'
 
 // styles
-const headingStyles = {
-  marginBottom: "10px",
-}
+// const headingStyles = {
+//   marginBottom: "10px",
+// }
 
-const aStyles = {
-  margin: "20px",
-}
+// const aStyles = {
+//   margin: "20px",
+// }
 
 const linkSpan = {
   marginTop: "-30px",
@@ -16,10 +16,10 @@ const linkSpan = {
   display: "block",
 }
 
-const stickyStyles = {
-  backgroundColor: "white",
-  whiteSpace: 'nowrap',
-}
+// const stickyStyles = {
+//   backgroundColor: "white",
+//   whiteSpace: 'nowrap',
+// }
 
 const VCSagan = () => {
   return (
