@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import VCNavBar from './vcnavbar'
 
 // styles
@@ -8,7 +9,7 @@ const Header = () => {
   return (
     <div>
       <h1 className={headingStyles}>Value Chain</h1>
-      <Link className={ddlink} to="/">Back to Home page</Link>
+      <Link to="/">Back to Home page</Link>
     </div>
   )
 }
