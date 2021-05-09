@@ -17,10 +17,6 @@
   text-align: center;
 }
 
-.linktext {
-  color: #333
-}
-
 /* Style the links inside the navigation bar */
 .navlink, .active {
   /* background-color: #333; */

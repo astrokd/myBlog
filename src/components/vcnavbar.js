@@ -2,16 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby'
 
 // styles
-import { topnav, navlink, active, linktext } from './vcnavbar.module.css'
-
-const activelinkstyle = {
-  color: "black",
-  zIndex: 10,
-}
-
-const linkstyle = {
-  color: "#333",
-}
+import { topnav, navlink, active } from './vcnavbar.module.css'
 
 const Starter = ({ children, linkpath, linkstyle }) => {
   return (
