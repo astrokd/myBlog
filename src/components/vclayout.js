@@ -32,6 +32,7 @@ const VCLayout = ({ children, activelink }) => {
         <div>
           <VCNavBar activelink={activelink}></VCNavBar>
         </div>
+        <br />
         <div className={paragraphStyles}>
           { children }
         </div>

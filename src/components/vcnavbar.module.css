@@ -4,7 +4,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  width: 100%;
+  width: 80%;
   background-color: #333;
   overflow: visible;
   margin: 0;
@@ -27,13 +27,13 @@
 }
 
 /* Change the color of links on hover */
-.navlink:hover polygon, .active:hover polygon {
+.navlink:hover polygon {
   background-color: #ddd;
   fill: #ddd;
   stroke: #ddd;
 }
 
-.navlink:hover text, .active:hover text{
+.navlink:hover text{
   background-color: #ddd;
   fill: black;
   stroke: black;
