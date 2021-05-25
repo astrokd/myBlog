@@ -27,6 +27,7 @@ const NavBar = ({ activelink }) => {
         <div className={navlink}><Link to="/contact">Contact page</Link></div>
         <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
         <DropDown></DropDown>
+        <div className={navlink}><Link to="/vcloremipsum">Vchain</Link></div>
       </div>
       )
   }
