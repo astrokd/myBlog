@@ -4,10 +4,22 @@ import CallToAction from '../components/callToAction'
 import Bio from "../components/bio"
 import { StaticImage } from "gatsby-plugin-image"
 
+// styles
+import { imgStyles } from './pages.module.css'
+
+
 // data
 const MugShot = () => {
   return (
-    <StaticImage src="../images/mugshot.png" alt="My Mugshot" />
+    <StaticImage className={imgStyles} src="../images/mugshot.png" alt="My Mugshot" />
+  )
+}
+
+const mntrpath = "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg"
+
+const MntRainer = () => {
+  return (
+    <StaticImage className={imgStyles} src={mntrpath} alt="Mnt Rainer" />
   )
 }
 
@@ -27,6 +39,8 @@ const IndexPage = () => {
           This is my Bio, it will be an expandable bio, but right not it is just a simple div.
 
         </Bio>
+
+        <MntRainer />
 
       </Layout>
     </>
