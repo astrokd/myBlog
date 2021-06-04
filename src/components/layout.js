@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './navbar'
+import {Helmet} from "react-helmet";
 
 // styles
 import { pageStyles, headingStyles, subHeadingStyles, paragraphStyles } from './layout.module.css'
@@ -25,6 +26,11 @@ const Footer = () => {
 const Layout = ({ children, activelink }) => {
   return (
     <main className={pageStyles}>
+      <Helmet>
+        <title>{activelink}</title>
+        <meta name="description" content="Test Blog" />
+        <meta name="author" content="Kevin Dreyer"></meta>
+      </Helmet>
       <title>{activelink} Page</title>
         <Header></Header>
       <div className={pageStyles}>
