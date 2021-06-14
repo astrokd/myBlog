@@ -1,14 +1,15 @@
 import React from 'react'
 import NavBar from './navbar'
 import {Helmet} from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby"
 
 // styles
 import { pageStyles, headingStyles, subHeadingStyles, paragraphStyles } from './layout.module.css'
 
-const Header = () => {
+const Header = ( {title} ) => {
   return (
     <div>
-      <h1 className={headingStyles}>Test Blog</h1>
+      <h1 className={headingStyles}>{title}</h1>
       <p className={subHeadingStyles}>by KD</p>  
     </div>
   )
@@ -24,6 +25,15 @@ const Footer = () => {
 }
 
 const Layout = ({ children, activelink }) => {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
   return (
     <main className={pageStyles}>
       <Helmet>
@@ -32,7 +42,7 @@ const Layout = ({ children, activelink }) => {
         <meta name="author" content="Kevin Dreyer"></meta>
       </Helmet>
       <title>{activelink} Page</title>
-        <Header></Header>
+        <Header title={data.site.siteMetadata.title}></Header>
       <div className={pageStyles}>
         <div>
           <NavBar activelink={activelink}></NavBar>
