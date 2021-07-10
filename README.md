@@ -4,45 +4,24 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  GATSBYCONF 2021 - Getting Started with Gatsby Workshop
 </h1>
+<h3>started with Gatsby minimal starter template</h3>
 
-## 🚀 Quick start
+[Quick start from starter template readme](/quickstart.md)
 
-1.  **Create a Gatsby site.**
+Link to workshop [Getting Started with Gatsby Workshop GATSBYCONF 2021](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+0. Set up your development environment [PART 0](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-0/)
+    1. npm --version: 7.15.1
+    2. node --version: v16.2.0
+    3. git --version: git version 2.30.1 (Apple Git-130)
+    4. gatsby --version: Gatsby CLI version: 3.6.0, Gatsby version: 3.6.2
+1. Crete and deploy your first Gatsby site [PART 1](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-1/)
+2. Use and style React components [PART 2](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-2/)
+3. Add features with plugins [PART 3](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-3/)
+4. Query for data with GraphQL [PART 4](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-4/)
+5. Transform data to use Markdown [PART 5](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-5/)
+6. Create pages proprammatically [PART 6](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-6/)
+7. Add dynamic images [PART 7](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-7/)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
