@@ -12,12 +12,15 @@
 
 Link to workshop [Getting Started with Gatsby Workshop GATSBYCONF 2021](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/)
 
+[Link to deployed main branch of website](https://myblogmain.gtsb.io/)
+
 0. Set up your development environment [PART 0](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-0/)
     1. npm --version: 7.15.1
     2. node --version: v16.2.0
     3. git --version: git version 2.30.1 (Apple Git-130)
     4. gatsby --version: Gatsby CLI version: 3.6.0, Gatsby version: 3.6.2
-1. Crete and deploy your first Gatsby site [PART 1](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-1/)
+1. Create and deploy your first Gatsby site [PART 1](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-1/)
+    1. [https://myblogmain.gtsb.io/](https://myblogmain.gtsb.io/)
 2. Use and style React components [PART 2](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-2/)
 3. Add features with plugins [PART 3](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-3/)
 4. Query for data with GraphQL [PART 4](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-4/)
