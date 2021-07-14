@@ -22,8 +22,18 @@ Link to workshop [Getting Started with Gatsby Workshop GATSBYCONF 2021](https://
 1. Create and deploy your first Gatsby site [PART 1](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-1/)
     1. [https://myblogmain.gtsb.io/](https://myblogmain.gtsb.io/)
 2. Use and style React components [PART 2](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-2/)
+    1. created about page
+    2. created nav bar with active link
+    3. created Layout and placed navbar and header/footer in it
+    4. Added contact page, CTA component, expandanble Bio, and started an expanadable nav menu
 3. Add features with plugins [PART 3](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-3/)
+    1. Added gatsby-plugin-image
+    2. Added gatsby-plugin-react-helmet
+    3. Tried adding gatsby-plugin-nprogress
 4. Query for data with GraphQL [PART 4](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-4/)
+    1. Added query to siteMetadata to pull title
+    2.
+    3.
 5. Transform data to use Markdown [PART 5](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-5/)
 6. Create pages proprammatically [PART 6](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-6/)
 7. Add dynamic images [PART 7](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-7/)
