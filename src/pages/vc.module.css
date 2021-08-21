@@ -1,6 +1,7 @@
 .contentStyle {
   margin: 40px 40px;
   display: block;
+  float: left;
 }
 
 h2 {
@@ -11,4 +12,5 @@ h2 {
   margin-Top: "30px";
   padding-Bottom: "30px";
   display: "block";
+  float: left;
 }

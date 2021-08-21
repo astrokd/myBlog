@@ -1,5 +1,7 @@
 
 .pageStyles {
+  width: 90%;
+  margin: 0 auto;
   color: "#232129";
   padding: 10px;
   font-Family: "-apple-system, Roboto, sans-serif, serif";
@@ -14,6 +16,10 @@
 }
 .paragraphStyles {
   margin-Bottom: 32px;
+}
+.footerStyles {
+  float: left;
+  clear: both;
 }
 
 /* const headingAccentStyles = {
