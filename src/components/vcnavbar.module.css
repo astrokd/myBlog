@@ -1,43 +1,73 @@
 :root {
   --menu-font-size: 17px;
+  --menu-margin-overlap: 0px;
+  --menu-margin-overlapB: -25%;
+  --menu-button-width: 200px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  width: 80%;
+  width: calc(--menu-button-width*5);
   background-color: #333;
   overflow: visible;
   margin: 0;
   padding: 0;
+  display: block;
+}
+
+.stickyNav {
+  margin-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-x: auto;
+  overflow-y: scroll;
+  white-space: nowrap;
+  top:0;
+  width:100%;
+  z-index:100;
 }
 
 .navlink, .active {
   float: left;
   color: black;
   text-align: center;
+  width: var(--menu-button-width);
+  height: 50px;
+}
+
+svg {
+  width: var(--menu-button-width);
+  height: 50px;
+}
+
+.linktext {
+  position: relative;
+  top: -56px;
+  left: 0px;
+  color: #686060;
+  /* text-align: center; */
+  /* text-decoration: none; */
+  font-size: var(--menu-font-size);
+  z-index: 200;
 }
 
 /* Style the links inside the navigation bar */
-.navlink, .active {
+.navlink {
   color: #f2f2f2;
   text-align: center;
-  margin: 0 -21px 0 0;
+  margin: 0 var(--menu-margin-overlap) 5px 1px;
   text-decoration: none;
   font-size: var(--menu-font-size);
+  z-index: 1;
 }
 
-/* Change the color of links on hover */
-.navlink:hover polygon {
-  background-color: #ddd;
-  fill: #ddd;
-  stroke: #ddd;
-}
-
-.navlink:hover text{
-  background-color: #ddd;
-  fill: black;
-  stroke: black;
-  color: black;
+.active {
+  color: #f2f2f2;
+  text-align: center;
+  margin: 0 var(--menu-margin-overlap) 5px 1px;
+  text-decoration: none;
+  font-size: var(--menu-font-size);
+  z-index: 10;
 }
 
 /* Add a color to the active/current link */
@@ -47,16 +77,32 @@
 }
 
 .active text, .navlink text:active{
-  fill: #ddd;
-  stroke: #ddd;
+  fill: rgb(71, 71, 71);
+  stroke: rgb(71, 71, 71);
 }
 
 .navlink polygon {
-  fill: #333;
-  stroke: #333;
+  fill: rgb(180, 180, 180);
+  stroke: rgb(180, 180, 180);
 }
 
 .navlink text {
+  fill: rgb(71, 71, 71);
+  stroke: rgb(71, 71, 71);
+}
+
+/* Change the color of links on hover */
+
+.navlink:hover polygon {
+  background-color: #ddd;
   fill: #ddd;
   stroke: #ddd;
+}
+
+.navlink:hover .linktext {
+  color: black;
+}
+
+.navlink:hover .navlink {
+  margin: 0 -11px 0 0;
 }

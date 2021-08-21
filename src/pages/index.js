@@ -15,7 +15,9 @@ const MugShot = () => {
   )
 }
 
-const mntrpath = "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg"
+// const mntrpath = "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mount_Rainier_from_west.jpg"
+const mntrpath = "../images/placehold.jpeg"
+
 
 const MntRainer = () => {
   return (
