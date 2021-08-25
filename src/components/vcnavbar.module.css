@@ -1,18 +1,16 @@
 :root {
   --menu-font-size: 17px;
-  --menu-margin-overlap: 0px;
-  --menu-margin-overlapB: -25%;
-  --menu-button-width: 200px;
+  --menu-button-width: 100px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  width: calc(--menu-button-width*5);
-  background-color: #333;
+  width: 90vw;
   overflow: visible;
   margin: 0;
   padding: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .stickyNav {
@@ -31,7 +29,6 @@
   float: left;
   color: black;
   text-align: center;
-  width: var(--menu-button-width);
   height: 50px;
 }
 
@@ -42,20 +39,29 @@ svg {
 
 .linktext {
   position: relative;
-  top: -56px;
-  left: 0px;
-  color: #686060;
-  /* text-align: center; */
-  /* text-decoration: none; */
+  width: 80px;
+  top: -66px;
+  left: 8px;
+  text-align: center;
   font-size: var(--menu-font-size);
   z-index: 200;
+}
+
+.navlink .linktext {
+  color: #181616;
+  left: 10px;
+}
+
+.active .linktext {
+  color: #f2f2f2;
+  left: 12px;
 }
 
 /* Style the links inside the navigation bar */
 .navlink {
   color: #f2f2f2;
   text-align: center;
-  margin: 0 var(--menu-margin-overlap) 5px 1px;
+  width: var(--menu-button-width);
   text-decoration: none;
   font-size: var(--menu-font-size);
   z-index: 1;
@@ -64,7 +70,7 @@ svg {
 .active {
   color: #f2f2f2;
   text-align: center;
-  margin: 0 var(--menu-margin-overlap) 5px 1px;
+  width: 110px;
   text-decoration: none;
   font-size: var(--menu-font-size);
   z-index: 10;
@@ -100,7 +106,7 @@ svg {
 }
 
 .navlink:hover .linktext {
-  color: black;
+  color: #0e0d0d;
 }
 
 .navlink:hover .navlink {
