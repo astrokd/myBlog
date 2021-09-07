@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import CallToAction from '../components/callToAction'
 import Bio from "../components/bio"
 import { StaticImage } from "gatsby-plugin-image"
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // styles
 import { imgStyles } from './pages.module.css'
@@ -33,6 +35,9 @@ const IndexPage = () => {
 
         <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
         <MugShot />
+
+        <Button variant="primary">Primary</Button>{' '}
+        <Button variant="secondary">Secondary</Button>{' '}
 
         <CallToAction>This is a Call To Action</CallToAction>
         
