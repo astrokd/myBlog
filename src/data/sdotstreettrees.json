@@ -1,0 +1,81 @@
+{
+  "Large Columnar Trees": {
+    "ScientificName": "Taxodium distichum 'Mickelson'",
+    "CommonName": "Shawnee Brave Bald Cypress",
+    "MatureHeight": 55,
+    "Spread": 20,
+    "UnderWires": "No",
+    "MinStripWidth": 6,
+    "FlowerColor": "N/A",
+    "FallColor": "orange",
+    "Comments": "Deciduous conifer - tolerates city conditions"
+  },
+  "Large Trees": {
+    "ScientificName": "Zelkova serrata ‘Village Green’",
+    "CommonName": "Village Green Zelkova",
+    "MatureHeight": 40,
+    "Spread": 40,
+    "UnderWires": "No",
+    "MinStripWidth": 6,
+    "FlowerColor": "N/A",
+    "FallColor": "dark red",
+    "Comments": "Green Vase, Mussichino and Halka are improved forms.",
+    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1666"
+  },
+  "Medium / Large Trees": {
+    "ScientificName": "Ulmus parvifolia ‘Emer II’",
+    "CommonName": "Allee Elm",
+    "MatureHeight": 45,
+    "Spread": 35,
+    "UnderWires": "No",
+    "MinStripWidth": 5,
+    "FlowerColor": "N/A",
+    "FallColor": "orange",
+    "Comments": "Exfoliating bark and nice fall color - Resistant to Dutch Elm Disease"
+  },
+  "Medium Columnar Trees": {
+    "ScientificName": "Pyrus calleryana ‘Cambridge'’",
+    "CommonName": "Cambridge Pear",
+    "MatureHeight": 40,
+    "Spread": 15,
+    "UnderWires": "No",
+    "MinStripWidth": 5,
+    "FlowerColor": "white",
+    "FallColor": "dark red",
+    "Comments": "Narrow tree with better branch angles and form than the species - brittle limbs may still be a problem with breakage due to ice or wet snow"
+  },
+  "Medium Trees": {
+    "ScientificName": "Ulmus parvifolia 'Emer I'",
+    "CommonName": "Athena Classic Elm",
+    "MatureHeight": 30,
+    "Spread": 35,
+    "UnderWires": "No",
+    "MinStripWidth": 5,
+    "FlowerColor": "N/A",
+    "FallColor": "orange",
+    "Comments": "High resistance to Dutch Elm Disease. Drought resistant. Cinnamon colored exfoliating bark for seasonal interest."
+  },
+  "Small Columnar Trees": {
+    "ScientificName": "Sorbus americana ‘Dwarfcrown’",
+    "CommonName": "Red Cascade Mountain Ash",
+    "MatureHeight": 20,
+    "Spread": 10,
+    "UnderWires": "Yes",
+    "MinStripWidth": 5,
+    "FlowerColor": "white",
+    "FallColor": "orange",
+    "Comments": "Nice winter form - Red berries in clusters"
+  },
+  "Small Trees": {
+    "ScientificName": "Styrax obassia",
+    "CommonName": "Fragrant Styrax",
+    "MatureHeight": 25,
+    "Spread": 20,
+    "UnderWires": "Yes",
+    "MinStripWidth": 5,
+    "FlowerColor": "white",
+    "FallColor": "yellow",
+    "Comments": "Smooth gray bark and fragrant white flowers.",
+    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1521"
+  }
+}

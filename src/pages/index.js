@@ -4,10 +4,10 @@ import CallToAction from '../components/callToAction'
 import Bio from "../components/bio"
 import { StaticImage } from "gatsby-plugin-image"
 import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 // styles
-import { imgStyles } from './pages.module.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { imgStyles, bsbutton } from './pages.module.css'
 
 
 // data
@@ -32,12 +32,11 @@ const IndexPage = () => {
   return (
     <>
       <Layout activelink="Home">
-
+        <br></br>
         <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
         <MugShot />
 
-        <Button variant="primary">Primary</Button>{' '}
-        <Button variant="secondary">Secondary</Button>{' '}
+        <Button classname={bsbutton} variant="primary">Primary</Button>{' '}
 
         <CallToAction>This is a Call To Action</CallToAction>
         

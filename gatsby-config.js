@@ -18,5 +18,14 @@ module.exports = {
         showSpinner: true,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: "./src/data/",
+        ignore: [`**/\.*`],
+      },
+      __key: "data",
+    },
   ],
 };
