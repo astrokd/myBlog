@@ -1,6 +1,6 @@
 import React from 'react'
-import { Table } from 'react-bootstrap'
-// import { graphql } from "gatsby"
+import Table from 'react-bootstrap/Table';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const jsondata = [
     {
@@ -26,7 +26,7 @@ const StreetTrees = () => {
     return (
       <>
             <section className="Product">
-                <Table>
+                <Table striped bordered hover size="sm">
                     <thead>
                         <tr>
                             <th>Tree Type</th>
