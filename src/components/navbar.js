@@ -18,52 +18,17 @@ const DropDown = () => {
   )
 }
 
-const NavBar = ({ activelink }) => {
-  if (activelink === "Home") {
+const NavBar = (props) => {
     return (
       <div className={topnav}>
-        <div className={active}><Link to="/">Home page</Link></div>
-        <div className={navlink}><Link to="/about">About page</Link></div>
-        <div className={navlink}><Link to="/contact">Contact page</Link></div>
-        <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <DropDown></DropDown>
+        <div className={(props.activelink === "Home") ? active : navlink}><Link to="/">Home page</Link></div>
+        <div className={(props.activelink === "About") ? active : navlink}><Link to="/about">About page</Link></div>
+        <div className={(props.activelink === "Contact") ? active : navlink}><Link to="/contact">Contact page</Link></div>
+        <div className={(props.activelink === "Sticky") ? active : navlink}><Link to="/stickyMenu">Demo page</Link></div>
+        <div className={(props.activelink === "StreetTrees") ? active : navlink}><Link to="/sdotstreettrees">Street Trees</Link></div>
         <div className={navlink}><Link to="/vcloremipsum">Vchain</Link></div>
       </div>
       )
-  }
-  if (activelink === "About") {
-    return (
-      <div className={topnav}>
-        <div className={navlink}><Link to="/">Home page</Link></div>
-        <div className={active}><Link to="/about">About page</Link></div>
-        <div className={navlink}><Link to="/contact">Contact page</Link></div>
-        <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <DropDown></DropDown>
-      </div>
-    )
-  }
-  if (activelink === "Contact") {
-    return (
-      <div className={topnav}>
-        <div className={navlink}><Link to="/">Home page</Link></div>
-        <div className={navlink}><Link to="/about">About page</Link></div>
-        <div className={active}><Link to="/contact">Contact page</Link></div>
-        <div className={navlink}><Link to="/stickyMenu">Demo page</Link></div>
-        <DropDown></DropDown>
-      </div>
-    )
-  }
-  if (activelink === "Sticky") {
-    return (
-      <div className={topnav}>
-        <div className={navlink}><Link to="/">Home page</Link></div>
-        <div className={navlink}><Link to="/about">About page</Link></div>
-        <div className={navlink}><Link to="/contact">Contact page</Link></div>
-        <div className={active}><Link to="/stickyMenu">Demo page</Link></div>
-        <DropDown></DropDown>
-      </div>
-    )
-  }
 }
 
 export default NavBar
