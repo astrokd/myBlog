@@ -1,32 +1,15 @@
 import React from 'react'
-import Table from 'react-bootstrap/Table';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from 'react-bootstrap/Table'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
-
-// const jsondata = [
-//     {
-//       "TreeType": "Large Columnar Trees",
-//       "ScientificName": "Acer nigrum ‘Green Column’",
-//       "CommonName": "Green Column Black Sugar Maple",
-//     },
-//     {
-//       "TreeType": "Large Columnar Trees",
-//       "ScientificName": "Fraxinus americana 'Empire'",
-//       "CommonName": "Empire Ash",
-//     },
-//     {
-//       "TreeType": "Large Columnar Trees",
-//       "ScientificName": "Ginko biloba ‘Princeton Sentry’",
-//       "CommonName": "Princeton Sentry Ginkgo",
-//     }
-// ]
+import Layout from '../components/layout'
 
 // markup
 const StreetTrees = () => {
     console.log("in streettrees")
     return (
       <>
-            <section className="Product">
+        <Layout activelink="StreetTrees">
                 <Table striped bordered hover size="sm">
                     <thead>
                         <tr>
@@ -45,7 +28,7 @@ const StreetTrees = () => {
                         ))}
                     </tbody>
                 </Table>
-            </section>
+        </Layout>
       </>
     )
   }
