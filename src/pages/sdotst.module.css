@@ -13,3 +13,8 @@ th, td {
     font-size: medium;
 }
 
+.svgStyle {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+}

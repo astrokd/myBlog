@@ -3,8 +3,12 @@ import Table from 'react-bootstrap/Table'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
+import { StaticImage } from "gatsby-plugin-image"
 
-import { treeName, treeComment } from './sdotst.module.css'
+import { treeName, treeComment, svgStyle } from './sdotst.module.css'
+
+import Leaf from '../images/leaf.svg'
+
 
 // markup
 const StreetTrees = () => {
@@ -13,7 +17,7 @@ const StreetTrees = () => {
       <>
         <Layout activelink="StreetTrees">
             <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                <Table striped bordered hover size="sm">
+                <Table responsive striped bordered size="sm">
                     <thead>
                         <tr>
                             <th className={treeName}>Scientific & Common Name</th>
@@ -35,7 +39,7 @@ const StreetTrees = () => {
                                 <td style={(data.UnderWires === "No") ? {backgroundColor:'#FF0000'} : {backgroundColor:'#00FF00'} }>{data.UnderWires}</td>
                                 <td>{data.MinStripWidth}</td>
                                 <td>{data.FlowerColor}</td>
-                                <td>{data.FallColor}</td>
+                                <td><Leaf className={svgStyle}/></td>
                                 <td className={treeComment}>{data.Comments}</td>
                             </tr>
                         ))}
