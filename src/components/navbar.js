@@ -2,21 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby'
 
 // styles
-import { topnav, navlink, active, dropdown, dropdowncontent, dropbtn, ddlink } from './navbar.module.css'
-
-const DropDown = () => {
-  return (
-    <div className={dropdown}>
-          <div className={dropbtn}>css Dropdown</div>
-          <div className={dropdowncontent}>
-            <Link className={ddlink} to="/">Home page</Link>
-            <Link className={ddlink} to="/about">About page</Link>
-            <Link className={ddlink} to="/contact">Contact page</Link>
-            <Link className={ddlink} to="/stickyMenu">Demo page</Link>
-          </div>
-        </div>
-  )
-}
+import { topnav, navlink, active } from './navbar.module.css'
 
 const NavBar = (props) => {
     return (

@@ -4,6 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 
+import { treeName, treeComment, svgStyle } from './sdotst.module.css'
+
+import Leaf from '../images/leaf.svg';
+import Flower from '../images/flower.svg';
+
+
 // markup
 const StreetTrees = () => {
     console.log("in streettrees")
@@ -11,26 +17,30 @@ const StreetTrees = () => {
       <>
         <Layout activelink="StreetTrees">
             <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                <Table striped bordered hover size="sm">
+                <Table responsive striped bordered size="sm">
                     <thead>
                         <tr>
-                            <th>Tree Type</th>
-                            <th>Scientific & Common Name</th>
+                            <th className={treeName}>Scientific & Common Name</th>
                             <th>Mature<br /> Height</th>
                             <th>Spread</th>
                             <th>Under<br />Wires?</th>
                             <th>Min Strip<br />Width</th>
+                            <th>Flower<br />Color</th>
+                            <th>Fall<br />Color</th>
+                            <th>Comments</th>
                         </tr>
                     </thead>
                     <tbody>
                         {JSONData.map(data => (
                             <tr key={data.ScientificName}>
-                                <td>{data.TreeType}</td>
-                                <td>{data.ScientificName} <br />{data.CommonName}</td>
+                                <td className={treeName}>{data.ScientificName} <br />{data.CommonName}</td>
                                 <td>{data.MatureHeight}</td>
                                 <td>{data.Spread}</td>
-                                <td>{data.UnderWires}</td>
+                                <td style={(data.UnderWires === "No") ? {backgroundColor:'#FF0000'} : {backgroundColor:'#00FF00'} }>{data.UnderWires}</td>
                                 <td>{data.MinStripWidth}</td>
+                                <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} /> }</td>
+                                <td><Leaf className={svgStyle} /></td>
+                                <td className={treeComment}>{data.Comments}</td>
                             </tr>
                         ))}
                     </tbody>

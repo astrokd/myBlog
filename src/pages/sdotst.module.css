@@ -1,0 +1,20 @@
+th, td {
+    text-align: center;
+}
+
+.treeName {
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.treeComment {
+    min-width: 200px;
+    font-size: medium;
+}
+
+.svgStyle {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+}
