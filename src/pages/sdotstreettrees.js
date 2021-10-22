@@ -3,11 +3,11 @@ import Table from 'react-bootstrap/Table'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
-import { StaticImage } from "gatsby-plugin-image"
 
 import { treeName, treeComment, svgStyle } from './sdotst.module.css'
 
-import Leaf from '../images/leaf.svg'
+import Leaf from '../images/leaf.svg';
+import Flower from '../images/flower.svg';
 
 
 // markup
@@ -38,8 +38,8 @@ const StreetTrees = () => {
                                 <td>{data.Spread}</td>
                                 <td style={(data.UnderWires === "No") ? {backgroundColor:'#FF0000'} : {backgroundColor:'#00FF00'} }>{data.UnderWires}</td>
                                 <td>{data.MinStripWidth}</td>
-                                <td>{data.FlowerColor}</td>
-                                <td><Leaf className={svgStyle}/></td>
+                                <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} /> }</td>
+                                <td><Leaf className={svgStyle} /></td>
                                 <td className={treeComment}>{data.Comments}</td>
                             </tr>
                         ))}
