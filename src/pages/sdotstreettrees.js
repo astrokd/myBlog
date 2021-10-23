@@ -5,6 +5,7 @@ import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 
 import { treeName, treeComment, svgStyle } from './sdotst.module.css'
+// import styles from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -38,8 +39,8 @@ const StreetTrees = () => {
                                 <td>{data.Spread}</td>
                                 <td style={(data.UnderWires === "No") ? {backgroundColor:'#FF0000'} : {backgroundColor:'#00FF00'} }>{data.UnderWires}</td>
                                 <td>{data.MinStripWidth}</td>
-                                <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} /> }</td>
-                                <td><Leaf className={svgStyle} /></td>
+                                <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} fill={data.FlowerColor} /> }</td>
+                                <td>{(data.FallColor === "N/A") ? data.FallColor : <Leaf className={svgStyle} fill={data.FallColor} /> }</td>
                                 <td className={treeComment}>{data.Comments}</td>
                             </tr>
                         ))}
