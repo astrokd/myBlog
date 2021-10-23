@@ -156,7 +156,7 @@
     "Spread": 40,
     "UnderWires": "No",
     "MinStripWidth": 6,
-    "FlowerColor": "light yellow",
+    "FlowerColor": "lightyellow",
     "FallColor": "yellow",
     "Comments": "Least susceptible to leaf blotch - large fruit - fall color is varied, but quite beautiful"
   },
@@ -231,7 +231,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Tolerant of city conditions"
   },
   {
@@ -267,7 +267,7 @@
     "UnderWires": "No",
     "MinStripWidth": 8,
     "FlowerColor": "N/A",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Only sweetgum that is entirely fruitless. Smooth rounded leaf lobes"
   },
   {
@@ -461,7 +461,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Attractive exfoliating bark provides Winter appeal. Dark green leaves turn orange-red and purple in Fall.",
     "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1665"
   },
@@ -474,7 +474,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Green Vase, Mussichino and Halka are improved forms.",
     "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1666"
   },
@@ -622,7 +622,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Purple fall foliage - Compact tree - reportedly seedless"
   },
   {
@@ -830,7 +830,7 @@
     "UnderWires": "No",
     "MinStripWidth": 5,
     "FlowerColor": "white",
-    "FallColor": "dark red",
+    "FallColor": "darkred",
     "Comments": "Narrow tree with better branch angles and form than the species - brittle limbs may still be a problem with breakage due to ice or wet snow"
   },
   {
@@ -1497,7 +1497,7 @@
     "Spread": 20,
     "UnderWires": "Yes",
     "MinStripWidth": 5,
-    "FlowerColor": "burgandy",
+    "FlowerColor": "maroon",
     "FallColor": "N/A",
     "Comments": "Burgundy flower in spring before leaves - difficult to find in nursery trade"
   },
