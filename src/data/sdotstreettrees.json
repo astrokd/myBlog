@@ -46,7 +46,7 @@
     "FlowerColor": "N/A",
     "FallColor": "red",
     "Comments": "Handsome chunky bark",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1045"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1045"
   },
   {
     "TreeType": "Large Columnar Trees",
@@ -69,9 +69,9 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Drought resistant - beautiful green, glossy leaves in summer.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1267"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1267"
   },
   {
     "TreeType": "Large Columnar Trees",
@@ -82,7 +82,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Columnar variety of oak"
   },
   {
@@ -120,7 +120,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Resistant to leaf tatter.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/61"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/61"
   },
   {
     "TreeType": "Large Trees",
@@ -133,7 +133,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Reliable fall color.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/64"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/64"
   },
   {
     "TreeType": "Large Trees",
@@ -146,7 +146,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Limited use - where sugar maple is desired in limited planting strip area.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/62"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/62"
   },
   {
     "TreeType": "Large Trees",
@@ -171,7 +171,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Needs lots of water when young - can produce large surface roots.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/331"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/331"
   },
   {
     "TreeType": "Large Trees",
@@ -196,7 +196,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Beautiful cut leaf.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/629"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/629"
   },
   {
     "TreeType": "Large Trees",
@@ -293,7 +293,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Fast growing deciduous conifer.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/993"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/993"
   },
   {
     "TreeType": "Large Trees",
@@ -304,7 +304,7 @@
     "UnderWires": "No",
     "MinStripWidth": 8,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "More anthracnose resistant than other varieties - large tree that needs space"
   },
   {
@@ -316,7 +316,7 @@
     "UnderWires": "No",
     "MinStripWidth": 8,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "High resistance to powdery mildew"
   },
   {
@@ -328,7 +328,7 @@
     "UnderWires": "No",
     "MinStripWidth": 8,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Interesting shaggy peeling bark"
   },
   {
@@ -354,7 +354,7 @@
     "FlowerColor": "N/A",
     "FallColor": "yellow",
     "Comments": "Native to Pacific Northwest.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1268"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/1268"
   },
   {
     "TreeType": "Large Trees",
@@ -365,7 +365,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Nice summer foliage - leaves can persist throughout the winter"
   },
   {
@@ -377,7 +377,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "coarsely toothed leaf"
   },
   {
@@ -389,7 +389,7 @@
     "UnderWires": "No",
     "MinStripWidth": 8,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Large, sturdy tree. Acorns do not need dormant cold period to germinate, so can be invasive."
   },
   {
@@ -463,7 +463,7 @@
     "FlowerColor": "N/A",
     "FallColor": "darkred",
     "Comments": "Attractive exfoliating bark provides Winter appeal. Dark green leaves turn orange-red and purple in Fall.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1665"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/1665"
   },
   {
     "TreeType": "Large Trees",
@@ -476,7 +476,7 @@
     "FlowerColor": "N/A",
     "FallColor": "darkred",
     "Comments": "Green Vase, Mussichino and Halka are improved forms.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/1666"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/1666"
   },
   {
     "TreeType": "Medium / Large Trees",
@@ -561,7 +561,7 @@
     "UnderWires": "No",
     "MinStripWidth": 5,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Leaves green on top purple underneath."
   },
   {
@@ -585,7 +585,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "red",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Resists heat and drought better than other horsechestnuts"
   },
   {
@@ -611,7 +611,7 @@
     "FlowerColor": "N/A",
     "FallColor": "yellow",
     "Comments": "Tight, formal, dense crown - not for areas with high pedestrian traffic as tree can have significant debris from nut production.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/441"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/441"
   },
   {
     "TreeType": "Medium / Large Trees",
@@ -670,7 +670,7 @@
     "UnderWires": "No",
     "MinStripWidth": 5,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Rugged twisted branching and petite foliage - difficult to find in the nursery trade"
   },
   {
@@ -745,7 +745,7 @@
     "FlowerColor": "N/A",
     "FallColor": "yellow",
     "Comments": "Broadens when older. Great Plant Pick",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/295"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/295"
   },
   {
     "TreeType": "Medium Columnar Trees",
@@ -756,7 +756,7 @@
     "UnderWires": "No",
     "MinStripWidth": 6,
     "FlowerColor": "N/A",
-    "FallColor": "brown",
+    "FallColor": "tan",
     "Comments": "Purple foliage."
   },
   {
@@ -770,7 +770,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Good next to buildings - can have problems with tight branch angles.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/916"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/916"
   },
   {
     "TreeType": "Medium Columnar Trees",
@@ -795,7 +795,7 @@
     "FlowerColor": "white",
     "FallColor": "red",
     "Comments": "Consistent and brilliant fall color.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1072"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1072"
   },
   {
     "TreeType": "Medium Columnar Trees",
@@ -892,7 +892,7 @@
     "FlowerColor": "N/A",
     "FallColor": "yellow",
     "Comments": "White and pink peeling bark.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/237"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/237"
   },
   {
     "TreeType": "Medium Trees",
@@ -905,7 +905,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Outstanding fall color (variable - yellow, orange, red) - nice little tree.",
-    "Great Plant Pick Link": "https://www.greatplantpicks.org/plantlists/view/298"
+    "GPPLink": "https://www.greatplantpicks.org/plantlists/view/298"
   },
   {
     "TreeType": "Medium Trees",
@@ -930,7 +930,7 @@
     "FlowerColor": "white",
     "FallColor": "red",
     "Comments": "Frothy, 6-inch clusters of white flowers in June",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/413"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/413"
   },
   {
     "TreeType": "Medium Trees",
@@ -979,7 +979,7 @@
     "FlowerColor": "white",
     "FallColor": "orange",
     "Comments": "Thorns on younger trees.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/454"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/454"
   },
   {
     "TreeType": "Medium Trees",
@@ -992,7 +992,7 @@
     "FlowerColor": "white",
     "FallColor": "N/A",
     "Comments": "Large, unique flowers in May.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/502"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/502"
   },
   {
     "TreeType": "Medium Trees",
@@ -1017,7 +1017,7 @@
     "FlowerColor": "N/A",
     "FallColor": "N/A",
     "Comments": "Attractive purple leaves with wavy margins.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/632"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/632"
   },
   {
     "TreeType": "Medium Trees",
@@ -1054,7 +1054,7 @@
     "FlowerColor": "yellow",
     "FallColor": "yellow",
     "Comments": "Midsummer blooming - slow growing.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/882"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/882"
   },
   {
     "TreeType": "Medium Trees",
@@ -1067,7 +1067,7 @@
     "FlowerColor": "white",
     "FallColor": "N/A",
     "Comments": "6” inch fragrant white flowers in spring.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/945"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/945"
   },
   {
     "TreeType": "Medium Trees",
@@ -1080,7 +1080,7 @@
     "FlowerColor": "white",
     "FallColor": "N/A",
     "Comments": "Evergreen magnolia - can be damaged in years with wet, heavy snow.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/950"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/950"
   },
   {
     "TreeType": "Medium Trees",
@@ -1093,7 +1093,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Does not flower well when young.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/952"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/952"
   },
   {
     "TreeType": "Medium Trees",
@@ -1266,7 +1266,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Reliable and easy to grow, it has plentiful, green ½” inch seeds. Flowers similar to lily in the valley.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1519"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1519"
   },
   {
     "TreeType": "Medium Trees",
@@ -1327,7 +1327,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Very resistant to apple scab - one of the narrowest crabapples - persistant reddish ó” fruit.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/985"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/985"
   },
   {
     "TreeType": "Small Columnar Trees",
@@ -1376,7 +1376,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Somewhat shrublike - must train to a single stem - interesting bark.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/22"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/22"
   },
   {
     "TreeType": "Small Trees",
@@ -1389,7 +1389,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Avoid using on harsh sites - native tree.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/30"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/30"
   },
   {
     "TreeType": "Small Trees",
@@ -1414,7 +1414,7 @@
     "FlowerColor": "N/A",
     "FallColor": "red",
     "Comments": "Peeling cinnamon colored bark for seasonal interest.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/35"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/35"
   },
   {
     "TreeType": "Small Trees",
@@ -1451,7 +1451,7 @@
     "FlowerColor": "N/A",
     "FallColor": "orange",
     "Comments": "Multi seasonal interest with tan, exfoliating bark and red, orange/red fall color.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/70"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/70"
   },
   {
     "TreeType": "Small Trees",
@@ -1512,7 +1512,7 @@
     "FlowerColor": "N/A",
     "FallColor": "yellow",
     "Comments": "Wide spreading, slow growing - fall color is not outstanding.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/300"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/300"
   },
   {
     "TreeType": "Small Trees",
@@ -1549,7 +1549,7 @@
     "FlowerColor": "white",
     "FallColor": "red",
     "Comments": "Small white flowers in flat clusters - fall color is varied.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/411"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/411"
   },
   {
     "TreeType": "Small Trees",
@@ -1562,7 +1562,7 @@
     "FlowerColor": "white",
     "FallColor": "red",
     "Comments": "Does not do well on harsh, dry sites.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/415"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/415"
   },
   {
     "TreeType": "Small Trees",
@@ -1575,7 +1575,7 @@
     "FlowerColor": "pink",
     "FallColor": "red",
     "Comments": "Showy pinkish panicles of flowers in the spring - reddish purple leaves on some varieties.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/444"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/444"
   },
   {
     "TreeType": "Small Trees",
@@ -1600,7 +1600,7 @@
     "FlowerColor": "yellow",
     "FallColor": "N/A",
     "Comments": "Yellowish to cream colored flower in spring.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/969"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/969"
   },
   {
     "TreeType": "Small Trees",
@@ -1613,7 +1613,7 @@
     "FlowerColor": "pink",
     "FallColor": "yellow",
     "Comments": "Showy pink flowers.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/970"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/970"
   },
   {
     "TreeType": "Small Trees",
@@ -1626,7 +1626,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Flower is ‘star’ shaped rather than tulip like - white to pinkish white in March or April.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/956"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/956"
   },
   {
     "TreeType": "Small Trees",
@@ -1639,7 +1639,7 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Disease resistant - persistent yellow fruit in fall and winter.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/984"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/984"
   },
   {
     "TreeType": "Small Trees",
@@ -1676,7 +1676,7 @@
     "FlowerColor": "red",
     "FallColor": "orange",
     "Comments": "Blooms before it leafs out - drought tolerant - Varied fall color - reds, oranges and yellows.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1090"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1090"
   },
   {
     "TreeType": "Small Trees",
@@ -1749,7 +1749,7 @@
     "FlowerColor": "white",
     "FallColor": "orange",
     "Comments": "Simple leaves and beautiful pink/red fruit.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1488"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1488"
   },
   {
     "TreeType": "Small Trees",
@@ -1762,7 +1762,7 @@
     "FlowerColor": "white",
     "FallColor": "orange",
     "Comments": "Extraordinary cinnamon colored bark - avoid hot, dry sites.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1512"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1512"
   },
   {
     "TreeType": "Small Trees",
@@ -1775,7 +1775,7 @@
     "FlowerColor": "white",
     "FallColor": "orange",
     "Comments": "Patchwork bark, white flower in spring.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1513"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1513"
   },
   {
     "TreeType": "Small Trees",
@@ -1788,6 +1788,6 @@
     "FlowerColor": "white",
     "FallColor": "yellow",
     "Comments": "Smooth gray bark and fragrant white flowers.",
-    "Great Plant Pick Link": "http://www.greatplantpicks.org/plantlists/view/1521"
+    "GPPLink": "http://www.greatplantpicks.org/plantlists/view/1521"
   }
 ]

@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   clear: both;
+  float: left;
 }
 
 .navlink, .active {
