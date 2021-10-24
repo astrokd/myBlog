@@ -5,10 +5,19 @@ import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 
 import { treeName, treeComment, svgStyle } from './sdotst.module.css'
-// import styles from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
+
+const Comments = (props) => {
+    return (
+        <div style={(props.Warnings) ? {backgroundColor:'yellow'} : {backgroundColor:'transparent'} } >
+            {props.Comments}
+            {(props.Warnings) ? (<b> - {props.Warnings}</b>) : ""}
+            {(props.GPPLink) ? ( <a href={props.GPPLink} rel='noopener'><b> Great Plant Pick</b></a>) : ""}
+        </div>
+    )
+}
 
 
 // markup
@@ -41,7 +50,7 @@ const StreetTrees = () => {
                                 <td>{data.MinStripWidth}</td>
                                 <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} fill={data.FlowerColor} /> }</td>
                                 <td>{(data.FallColor === "N/A") ? data.FallColor : <Leaf className={svgStyle} fill={data.FallColor} /> }</td>
-                                <td className={treeComment}>{data.Comments}</td>
+                                <td className={treeComment}><Comments Comments={data.Comments} Warnings={data.Warnings || false} GPPLink={data.GPPLink || false}/></td>
                             </tr>
                         ))}
                     </tbody>
