@@ -9,6 +9,21 @@ import { treeName, treeComment, svgStyle } from './sdotst.module.css'
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
 
+const TableHeader = (props) => {
+    return (
+        <tr>
+            <th className={treeName}>Scientific & Common Name</th>
+            <th>Mature<br /> Height</th>
+            <th>Spread</th>
+            <th>Under<br />Wires?</th>
+            <th>Min Strip<br />Width</th>
+            <th>Flower<br />Color</th>
+            <th>Fall<br />Color</th>
+            <th>Comments</th>
+        </tr>
+    )
+}
+
 const Comments = (props) => {
     return (
         <div style={(props.Warnings) ? {backgroundColor:'yellow'} : {backgroundColor:'transparent'} } >
@@ -34,16 +49,7 @@ class StreetTrees extends React.Component {
                   <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
                       <Table responsive striped bordered size="sm">
                           <thead>
-                              <tr>
-                                  <th className={treeName}>Scientific & Common Name</th>
-                                  <th>Mature<br /> Height</th>
-                                  <th>Spread</th>
-                                  <th>Under<br />Wires?</th>
-                                  <th>Min Strip<br />Width</th>
-                                  <th>Flower<br />Color</th>
-                                  <th>Fall<br />Color</th>
-                                  <th>Comments</th>
-                              </tr>
+                              <TableHeader />
                           </thead>
                           <tbody>
                               {this.state.listData.map(data => (
