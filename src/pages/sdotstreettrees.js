@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 
-import { treeName, treeComment, svgStyle } from './sdotst.module.css'
+import { treeType, treeName, treeComment, svgStyle } from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -20,6 +20,7 @@ const TableHeader = (props) => {
             <th>Flower<br />Color</th>
             <th>Fall<br />Color</th>
             <th>Comments</th>
+            <th className={treeType}>Tree Type</th>
         </tr>
     )
 }
@@ -34,15 +35,19 @@ const Comments = (props) => {
     )
 }
 
+
 class StreetTrees extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             listData: JSONData,
+            currentType: null,
         }
     }
 
     render() {
+        let typechange = true
+        const blank = " "
         return (
             <>
               <Layout activelink="StreetTrees">
@@ -62,6 +67,7 @@ class StreetTrees extends React.Component {
                                       <td>{(data.FlowerColor === "N/A") ? data.FlowerColor : <Flower className={svgStyle} fill={data.FlowerColor} /> }</td>
                                       <td>{(data.FallColor === "N/A") ? data.FallColor : <Leaf className={svgStyle} fill={data.FallColor} /> }</td>
                                       <td className={treeComment}><Comments Comments={data.Comments} Warnings={data.Warnings || false} GPPLink={data.GPPLink || false}/></td>
+                                      <td className={treeType}>{(data.TreeType !== this.state.currentType) ? (this.state.currentType = data.TreeType) : null}</td>
                                   </tr>
                               ))}
                           </tbody>

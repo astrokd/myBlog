@@ -8,6 +8,12 @@ th, td {
     max-width: 90px;
 }
 
+.treeType {
+    min-width: 30px;
+    max-width: 50px;
+    font-size: x-small;
+}
+
 .treeName {
     min-width: 250px;
     max-width: 300px;
