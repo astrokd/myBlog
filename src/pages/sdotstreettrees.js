@@ -74,15 +74,13 @@ class StreetTrees extends React.Component {
             <>
               <Layout activelink="StreetTrees">
                   <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                      <Table responsive striped bordered size="sm">
-                          <thead>
-                              <TableHeader />
-                          </thead>
+                      <Table responsive bordered size="sm">
                           <tbody>
                               {this.state.listData.map(data => (
                                   <>
                                     <If condition={data.TreeType !== this.state.currentType}>
                                         <TreeTypeRow type={this.state.currentType = data.TreeType}/>
+                                        <TableHeader />
                                     </If>
                                     <TreeRow tree={data} />
                                   </>

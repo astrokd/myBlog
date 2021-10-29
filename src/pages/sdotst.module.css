@@ -11,6 +11,9 @@ th, td {
 .treeType {
     text-align: left;
     color: green;
+    font-weight: bold;
+    border:none;
+    background-color: transparent;
 }
 
 .treeName {
@@ -30,5 +33,4 @@ th, td {
     height: 35px;
     text-align: center;
     margin: auto;
-    /* fill: white; */
 }
