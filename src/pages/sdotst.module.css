@@ -9,9 +9,11 @@ th, td {
 }
 
 .treeType {
-    min-width: 30px;
-    max-width: 50px;
-    font-size: x-small;
+    text-align: left;
+    color: green;
+    font-weight: bold;
+    border:none;
+    background-color: transparent;
 }
 
 .treeName {
@@ -31,5 +33,4 @@ th, td {
     height: 35px;
     text-align: center;
     margin: auto;
-    /* fill: white; */
 }
