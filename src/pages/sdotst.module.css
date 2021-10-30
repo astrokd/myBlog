@@ -12,20 +12,20 @@ th, td {
     text-align: left;
     color: green;
     font-weight: bold;
-    border:none;
+    border: none;
     background-color: transparent;
 }
 
 .treeName {
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 350px;
+    max-width: 400px;
     text-align: left;
 }
 
 .treeComment {
-    min-width: 300px;
-    max-width: 450px;
-    font-size: medium;
+    min-width: 450px;
+    max-width: 500px;
+    font-size: small;
 }
 
 .svgStyle {

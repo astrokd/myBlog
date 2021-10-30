@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
@@ -60,37 +60,30 @@ const Comments = (props) => {
     )
 }
 
-class StreetTrees extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            listData: JSONData,
-            currentType: null,
-        }
-    }
+function StreetTreeslist() {
+    const listData = useState(JSONData);
+    let currentType = useState(null);
 
-    render() {
-        return (
-            <>
-              <Layout activelink="StreetTrees">
-                  <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                      <Table responsive bordered size="sm">
-                          <tbody>
-                              {this.state.listData.map(data => (
-                                  <>
-                                    <If condition={data.TreeType !== this.state.currentType}>
-                                        <TreeTypeRow type={this.state.currentType = data.TreeType}/>
-                                        <TableHeader />
-                                    </If>
-                                    <TreeRow tree={data} />
-                                  </>
-                              ))}
-                          </tbody>
-                      </Table>
-              </Layout>
-            </>
-          )
-    }
+    return (
+        <>
+          <Layout activelink="StreetTrees">
+              <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
+                  <Table responsive bordered size="sm">
+                      <tbody>
+                          {listData.map(data => (
+                              <>
+                                <If condition={data.TreeType !== currentType}>
+                                    <TreeTypeRow type={currentType = data.TreeType}/>
+                                    <TableHeader />
+                                </If>
+                                <TreeRow tree={data} />
+                              </>
+                          ))}
+                      </tbody>
+                  </Table>
+          </Layout>
+        </>
+    )
 }
   
-export default StreetTrees
+export default StreetTreeslist
