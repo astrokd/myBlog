@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table'
+import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
@@ -61,16 +62,23 @@ const Comments = (props) => {
 }
 
 function StreetTreeslist() {
-    const listData = useState(JSONData);
+    const [list, setList] = useState(JSONData);
     let currentType = useState(null);
+
+    function handleClick() {
+        const nextList = [...list];
+        nextList.reverse();
+        setList(nextList)
+    }
 
     return (
         <>
           <Layout activelink="StreetTrees">
               <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
+              <Button variant="outline-secondary" onClick={handleClick}>Reverse</Button>
                   <Table responsive bordered size="sm">
                       <tbody>
-                          {listData.map(data => (
+                          {list.map(data => (
                               <>
                                 <If condition={data.TreeType !== currentType}>
                                     <TreeTypeRow type={currentType = data.TreeType}/>
