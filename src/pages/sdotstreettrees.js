@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table'
+import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 import If from '../components/if'
 
-import { treeType, treeName, treeComment, svgStyle } from './sdotst.module.css'
+import { treeType, treeName, treeComment, svgStyle, sort } from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -61,16 +62,71 @@ const Comments = (props) => {
 }
 
 function StreetTreeslist() {
-    const listData = useState(JSONData);
+    const orgList = JSONData
+    const [list, setList] = useState(orgList);
     let currentType = useState(null);
+
+    function handleClickClear() {
+        const nextList = [...orgList];
+        setList(nextList)
+    }
+    
+    function handleClickReverse() {
+        const nextList = [...list];
+        nextList.reverse();
+        setList(nextList)
+    }
+
+    function handleClickSortWires() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.UnderWires < b.UnderWires ){
+              return -1;
+            }
+            if ( a.UnderWires > b.UnderWires ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    function handleClickSortFlowers() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.FlowerColor < b.FlowerColor ){
+              return -1;
+            }
+            if ( a.FlowerColor > b.FlowerColor ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
 
     return (
         <>
           <Layout activelink="StreetTrees">
               <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
+                <Button variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
+                <Button variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
                   <Table responsive bordered size="sm">
                       <tbody>
-                          {listData.map(data => (
+                        <tr>
+                            <th>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortWires}>Sort</Button></th>
+                            <th></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                          {list.map(data => (
                               <>
                                 <If condition={data.TreeType !== currentType}>
                                     <TreeTypeRow type={currentType = data.TreeType}/>

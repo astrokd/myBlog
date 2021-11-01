@@ -34,3 +34,7 @@ th, td {
     text-align: center;
     margin: auto;
 }
+
+.sort {
+    width: 55px;
+}
