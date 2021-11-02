@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
+import FormControl from 'react-bootstrap/FormControl'
+import InputGroup from 'react-bootstrap/InputGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 import If from '../components/if'
 
-import { treeType, treeName, treeComment, svgStyle, sort } from './sdotst.module.css'
+import { treeType, treeName, treeComment, svgStyle, button } from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -65,15 +67,51 @@ function StreetTreeslist() {
     const orgList = JSONData
     const [list, setList] = useState(orgList);
     let currentType = useState(null);
+    let searchText = useState("enter search term...")
 
+// Data Display Functions
+
+    // Clear Display to original default state
     function handleClickClear() {
         const nextList = [...orgList];
         setList(nextList)
     }
     
+    // Reverse Display of data
     function handleClickReverse() {
         const nextList = [...list];
         nextList.reverse();
+        setList(nextList)
+    }
+
+    // Sort Functions for Mature Height to Fall Color
+    function handleClickSortHeight() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.MatureHeight < b.MatureHeight ){
+              return -1;
+            }
+            if ( a.MatureHeight > b.MatureHeight ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    function handleClickSortSpread() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.Spread < b.Spread ){
+              return -1;
+            }
+            if ( a.Spread > b.Spread ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
         setList(nextList)
     }
 
@@ -84,6 +122,21 @@ function StreetTreeslist() {
               return -1;
             }
             if ( a.UnderWires > b.UnderWires ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    function handleClickSortStrip() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.MinStripWidth < b.MinStripWidth ){
+              return -1;
+            }
+            if ( a.MinStripWidth > b.MinStripWidth ){
               return 1;
             }
             return 0;
@@ -107,6 +160,28 @@ function StreetTreeslist() {
         setList(nextList)
     }
 
+    function handleClickSortFall() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.FallColor < b.FallColor ){
+              return -1;
+            }
+            if ( a.FallColor > b.FallColor ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    // Search Scientific & Common Name column
+    function handleClickSearchName() {
+        const nextList = [...list];
+        nextList.filter(searchText);
+        setList(nextList)
+    }
+
     return (
         <>
           <Layout activelink="StreetTrees">
@@ -117,13 +192,18 @@ function StreetTreeslist() {
                       <tbody>
                         <tr>
                             <th>
+                                <InputGroup size="sm">
+                                    <InputGroup.Text id="inputGroup-sizing-sm">Name</InputGroup.Text>
+                                    <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="enter search term..." type="text" value={searchText} />
+                                    <Button className={button} variant="outline-secondary" onClick={handleClickSearchName}>Search</Button>
+                                </InputGroup>
                             </th>
-                            <th></th>
-                            <th></th>
-                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortWires}>Sort</Button></th>
-                            <th></th>
-                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
-                            <th></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortHeight}>Sort</Button></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortSpread}>Sort</Button></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortWires}>Sort</Button></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortStrip}>Sort</Button></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
+                            <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortFall}>Sort</Button></th>
                             <th></th>
                         </tr>
                           {list.map(data => (
