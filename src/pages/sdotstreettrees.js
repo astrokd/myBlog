@@ -77,6 +77,36 @@ function StreetTreeslist() {
         setList(nextList)
     }
 
+    function handleClickSortHeight() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.MatureHeight < b.MatureHeight ){
+              return -1;
+            }
+            if ( a.MatureHeight > b.MatureHeight ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    function handleClickSortSpread() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.Spread < b.Spread ){
+              return -1;
+            }
+            if ( a.Spread > b.Spread ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
     function handleClickSortWires() {
         const nextList = [...list];
         function compare( a, b ) {
@@ -84,6 +114,21 @@ function StreetTreeslist() {
               return -1;
             }
             if ( a.UnderWires > b.UnderWires ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
+    function handleClickSortStrip() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.MinStripWidth < b.MinStripWidth ){
+              return -1;
+            }
+            if ( a.MinStripWidth > b.MinStripWidth ){
               return 1;
             }
             return 0;
@@ -133,10 +178,10 @@ function StreetTreeslist() {
                         <tr>
                             <th>
                             </th>
-                            <th></th>
-                            <th></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortHeight}>Sort</Button></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortSpread}>Sort</Button></th>
                             <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortWires}>Sort</Button></th>
-                            <th></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortStrip}>Sort</Button></th>
                             <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
                             <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFall}>Sort</Button></th>
                             <th></th>
