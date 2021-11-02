@@ -107,6 +107,21 @@ function StreetTreeslist() {
         setList(nextList)
     }
 
+    function handleClickSortFall() {
+        const nextList = [...list];
+        function compare( a, b ) {
+            if ( a.FallColor < b.FallColor ){
+              return -1;
+            }
+            if ( a.FallColor > b.FallColor ){
+              return 1;
+            }
+            return 0;
+        }
+        nextList.sort(compare);
+        setList(nextList)
+    }
+
     return (
         <>
           <Layout activelink="StreetTrees">
@@ -123,7 +138,7 @@ function StreetTreeslist() {
                             <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortWires}>Sort</Button></th>
                             <th></th>
                             <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
-                            <th></th>
+                            <th><Button className={sort} variant="secondary" size="sm" active onClick={handleClickSortFall}>Sort</Button></th>
                             <th></th>
                         </tr>
                           {list.map(data => (
