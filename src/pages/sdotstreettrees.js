@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
-import FormControl from 'react-bootstrap/FormControl'
+import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 import If from '../components/if'
 
-import { treeType, treeName, treeComment, svgStyle, button } from './sdotst.module.css'
+import { treeType, treeName, treeComment, svgStyle, button, bigButton } from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -63,17 +63,21 @@ const Comments = (props) => {
     )
 }
 
+// ***********  Function for page  ************
+
 function StreetTreeslist() {
     const orgList = JSONData
     const [list, setList] = useState(orgList);
     let currentType = useState(null);
-    let searchText = useState("enter search term...")
+    let [searchText, setSearch] = useState(null)
 
 // Data Display Functions
 
     // Clear Display to original default state
     function handleClickClear() {
         const nextList = [...orgList];
+        setSearch(null)
+        searchText = null
         setList(nextList)
     }
     
@@ -176,26 +180,40 @@ function StreetTreeslist() {
     }
 
     // Search Scientific & Common Name column
-    function handleClickSearchName() {
-        const nextList = [...list];
-        nextList.filter(searchText);
-        setList(nextList)
+    function handleChangeSearch(event) {
+        const changeSearch = event.target.value
+        setSearch(changeSearch)
+
     }
 
+    function handleClickSearchName() {
+        const search = searchText.toLowerCase();
+        let nextList = [...list];
+        
+        function searchList( row ) {
+            return row.ScientificName.toLowerCase().includes(search) || row.CommonName.toLowerCase().includes(search)
+        }
+
+        setList(nextList.filter(searchList))
+    }
+
+    //JSX for page
     return (
         <>
           <Layout activelink="StreetTrees">
               <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                <Button variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
-                <Button variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
+                <Button className={bigButton} variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
+                <Button className={bigButton} variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
+
+                <br></br>
                   <Table responsive bordered size="sm">
                       <tbody>
                         <tr>
                             <th>
                                 <InputGroup size="sm">
                                     <InputGroup.Text id="inputGroup-sizing-sm">Name</InputGroup.Text>
-                                    <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="enter search term..." type="text" value={searchText} />
-                                    <Button className={button} variant="outline-secondary" onClick={handleClickSearchName}>Search</Button>
+                                    <Form.Control aria-describedby="inputGroup-sizing-sm" placeholder="enter search term..." type="text" aria-label="Search name" value={searchText} onChange={handleChangeSearch} />
+                                    <Button className={button} variant="outline-secondary" type='submit' onClick={handleClickSearchName}>Search</Button>
                                 </InputGroup>
                             </th>
                             <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortHeight}>Sort</Button></th>
@@ -204,7 +222,7 @@ function StreetTreeslist() {
                             <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortStrip}>Sort</Button></th>
                             <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortFlowers}>Sort</Button></th>
                             <th><Button className={button} variant="secondary" size="sm" active onClick={handleClickSortFall}>Sort</Button></th>
-                            <th></th>
+                            <th>search</th>
                         </tr>
                           {list.map(data => (
                               <>
