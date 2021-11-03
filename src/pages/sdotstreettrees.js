@@ -8,7 +8,7 @@ import JSONData from "../data/sdotstreettrees.json"
 import Layout from '../components/layout'
 import If from '../components/if'
 
-import { treeType, treeName, treeComment, svgStyle, button } from './sdotst.module.css'
+import { treeType, treeName, treeComment, svgStyle, button, bigButton } from './sdotst.module.css'
 
 import Leaf from '../images/leaf.svg';
 import Flower from '../images/flower.svg';
@@ -76,6 +76,8 @@ function StreetTreeslist() {
     // Clear Display to original default state
     function handleClickClear() {
         const nextList = [...orgList];
+        setSearch(null)
+        searchText = null
         setList(nextList)
     }
     
@@ -200,8 +202,8 @@ function StreetTreeslist() {
         <>
           <Layout activelink="StreetTrees">
               <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                <Button variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
-                <Button variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
+                <Button className={bigButton} variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
+                <Button className={bigButton} variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
 
                 <br></br>
                   <Table responsive bordered size="sm">

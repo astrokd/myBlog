@@ -38,3 +38,7 @@ th, td {
 .button {
     width: 55px;
 }
+
+.bigButton {
+    width: 95px;
+}
