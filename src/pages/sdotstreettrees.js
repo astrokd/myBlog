@@ -185,11 +185,11 @@ function StreetTreeslist() {
     }
 
     function handleClickSearchName() {
-        const search = searchText;
+        const search = searchText.toLowerCase();
         let nextList = [...list];
         
         function searchList( row ) {
-            return row.ScientificName.includes(search) || row.CommonName.includes(search)
+            return row.ScientificName.toLowerCase().includes(search) || row.CommonName.toLowerCase().includes(search)
         }
 
         setList(nextList.filter(searchList))
