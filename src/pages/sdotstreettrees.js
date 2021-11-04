@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
@@ -67,6 +68,7 @@ const Comments = (props) => {
 
 function StreetTreeslist() {
     const orgList = JSONData
+    let [formKey, setFormKey] = useState(0)
     const [list, setList] = useState(orgList);
     let currentType = useState(null);
     let [searchText, setSearch] = useState(null)
@@ -79,6 +81,8 @@ function StreetTreeslist() {
         setSearch(null)
         searchText = null
         setList(nextList)
+        formKey = formKey+1
+        setFormKey(formKey++)
     }
     
     // Reverse Display of data
@@ -202,17 +206,15 @@ function StreetTreeslist() {
         <>
           <Layout activelink="StreetTrees">
               <h2>Seattle Department of Transportation – Approved Street Tree List</h2>
-                <Button className={bigButton} variant="outline-secondary" onClick={handleClickClear}>Clear</Button>
+                <Button className={bigButton} variant="outline-secondary" onClick={handleClickClear} key={formKey}>Clear</Button>
                 <Button className={bigButton} variant="outline-secondary" onClick={handleClickReverse}>Reverse</Button>
-
-                <br></br>
                   <Table responsive bordered size="sm">
                       <tbody>
                         <tr>
                             <th>
                                 <InputGroup size="sm">
                                     <InputGroup.Text id="inputGroup-sizing-sm">Name</InputGroup.Text>
-                                    <Form.Control aria-describedby="inputGroup-sizing-sm" placeholder="enter search term..." type="text" aria-label="Search name" value={searchText} onChange={handleChangeSearch} />
+                                    <Form.Control aria-describedby="inputGroup-sizing-sm" placeholder="enter search term..." type="text" aria-label="Search name" value={searchText} onChange={handleChangeSearch} key={formKey} />
                                     <Button className={button} variant="outline-secondary" type='submit' onClick={handleClickSearchName}>Search</Button>
                                 </InputGroup>
                             </th>
