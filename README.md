@@ -1,40 +1,27 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  GATSBYCONF 2021 - Getting Started with Gatsby Workshop
-</h1>
-<h3>started with Gatsby minimal starter template</h3>
+# MYBLOG
 
-[Quick start from starter template readme](/quickstart.md)
+[Current Public page](https://myblogmain.gatsbyjs.io/)
 
-Link to workshop [Getting Started with Gatsby Workshop GATSBYCONF 2021](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/)
+This site is built with [Gatsbyjs](https://www.gatsbyjs.com) using the [Gatsbyjs tutorials](https://www.gatsbyjs.com/docs/tutorial/).  It is meant to be a blog, portfolio of my work, and online resume.  The site is still in progress and is sometimes used to demo different ideas I'm testing out.
 
-[Link to deployed main branch of website](https://myblogmain.gtsb.io/)
+- ## Basic Organization
 
-0. Set up your development environment [PART 0](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-0/)
-    1. npm --version: 7.15.1
-    2. node --version: v16.2.0
-    3. git --version: git version 2.30.1 (Apple Git-130)
-    4. gatsby --version: Gatsby CLI version: 3.6.0, Gatsby version: 3.6.2
-1. Create and deploy your first Gatsby site [PART 1](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-1/)
-    1. [https://myblogmain.gtsb.io/](https://myblogmain.gtsb.io/)
-2. Use and style React components [PART 2](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-2/)
-    1. created about page
-    2. created nav bar with active link
-    3. created Layout and placed navbar and header/footer in it
-    4. Added contact page, CTA component, expandanble Bio, and started an expanadable nav menu
-3. Add features with plugins [PART 3](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-3/)
-    1. Added gatsby-plugin-image
-    2. Added gatsby-plugin-react-helmet
-    3. Tried adding gatsby-plugin-nprogress
-4. Query for data with GraphQL [PART 4](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-4/)
-    1. Added query to siteMetadata to pull title
-    2.
-    3.
-5. Transform data to use Markdown [PART 5](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-5/)
-6. Create pages proprammatically [PART 6](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-6/)
-7. Add dynamic images [PART 7](https://intro-workshop-gatsbyconf-2021.gatsbyjs.io/part-7/)
+The Navigation Bar contains links to pages that currently makeup the site.
 
+## Tools and plugins used
+
+- bootstrap: ^5.1.3
+- gatsby: ^3.6.2
+- gatsby-plugin-gatsby-cloud: ^2.6.1
+- gatsby-plugin-image: ^1.6.0
+- gatsby-plugin-nprogress: ^3.6.0
+- gatsby-plugin-react-helmet: ^4.6.0
+- gatsby-plugin-react-svg: ^3.1.0
+- gatsby-plugin-sharp: ^3.6.0
+- gatsby-source-filesystem: ^3.6.0
+- gatsby-transformer-sharp: ^3.6.0
+- nprogress: ^0.2.0
+- react: ^17.0.1
+- react-bootstrap: ^2.0.0
+- react-dom: ^17.0.1
+- react-helmet: ^6.1.0
