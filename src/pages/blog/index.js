@@ -2,9 +2,6 @@ import * as React from "react"
 import Layout from '../../components/layout'
 import { Link } from 'gatsby'
 
-// styles
-import { imgStyles, bsbutton } from './blog.module.css'
-
 // markup
 const BlogPage = () => {
   return (
