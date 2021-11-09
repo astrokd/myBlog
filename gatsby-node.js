@@ -20,7 +20,6 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               slug
             }
-            html
           }
         }
       }

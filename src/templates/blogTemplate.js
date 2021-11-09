@@ -12,8 +12,8 @@ export default function Template({ data, }) {
     <Layout> 
     <div className={blogPostContainer}>
       <div className={blogPost}>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h3>{frontmatter.title}</h3>
+        <h4>{frontmatter.date}</h4>
         <div
           className={blogPostContent}
           dangerouslySetInnerHTML={{ __html: html }}
