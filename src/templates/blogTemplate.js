@@ -12,8 +12,8 @@ export default function Template({ data, }) {
     <Layout> 
     <div className={blogPostContainer}>
       <div className={blogPost}>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h3>{frontmatter.title}</h3>
+        <h4>{frontmatter.date}</h4>
         <div
           className={blogPostContent}
           dangerouslySetInnerHTML={{ __html: html }}
@@ -25,8 +25,8 @@ export default function Template({ data, }) {
 }
 
 export const pageQuery = graphql`
-  query {
-    markdownRemark(frontmatter: {type: {eq: "post"} }) {
+  query($slug: String!) {
+    markdownRemark(frontmatter: {type: {eq: "post"}, slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
