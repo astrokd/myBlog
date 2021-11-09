@@ -25,8 +25,8 @@ export default function Template({ data, }) {
 }
 
 export const pageQuery = graphql`
-  query {
-    markdownRemark(frontmatter: {type: {eq: "post"} }) {
+  query($slug: String!) {
+    markdownRemark(frontmatter: {type: {eq: "post"}, slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
