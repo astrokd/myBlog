@@ -1,0 +1,12 @@
+.blogPostContainer {
+    width: auto;
+    margin: 10px 60px;
+}
+    
+.blogPost {
+    border-color: black;
+}
+
+.blogPostContent {
+    width: 90%;
+}

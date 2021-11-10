@@ -3,6 +3,9 @@ import Layout from '../../components/layout'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 
+// styles
+import { blogPostContainer, blogPost, blogPostContent } from './blog.module.css'
+
 export const query = graphql`
   query {
     allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}) {
