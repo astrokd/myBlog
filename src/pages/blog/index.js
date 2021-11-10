@@ -28,18 +28,19 @@ const BlogPage = ({ data }) => {
   return (
     <>
       <Layout activelink="Blog">
-        <br></br>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby blog with Markdown pages.</p>
-        <ul>
-            {posts.map(node => (
-                <li key={node.id}>
-                    <div>{node.frontmatter.title} - created on: {node.frontmatter.date}</div>
-                    <Link to={node.frontmatter.slug}>Go to post</Link>
-                </li>
-            ))}
-        </ul>
-
+        <div className={blogPostContainer}>
+            <br></br>
+            <h1>Hi people</h1>
+            <p>Welcome to your new Gatsby blog with Markdown pages.</p>
+            <ul className={blogPost}>
+                {posts.map(node => (
+                    <li key={node.id}>
+                        <div>{node.frontmatter.title} - created on: {node.frontmatter.date}</div>
+                        <Link to={node.frontmatter.slug}>Go to post</Link>
+                    </li>
+                ))}
+            </ul>
+        </div>              
       </Layout>
     </>
   )
