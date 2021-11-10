@@ -1,6 +1,22 @@
 import * as React from "react"
 import Layout from '../../components/layout'
 import { Link } from 'gatsby'
+import { graphql } from "gatsby"
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}) {
+      nodes {
+        html
+        frontmatter {
+          date
+          title
+          slug
+        }
+      }
+    }
+  }
+`;
 
 // markup
 const BlogPage = () => {
