@@ -8,6 +8,7 @@ export const query = graphql`
     allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}) {
       nodes {
         html
+        id
         frontmatter {
           date
           title
@@ -19,7 +20,8 @@ export const query = graphql`
 `;
 
 // markup
-const BlogPage = () => {
+const BlogPage = ({ data }) => {
+    const posts = data.allMarkdownRemark.nodes;
   return (
     <>
       <Layout activelink="Blog">
