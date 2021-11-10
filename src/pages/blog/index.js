@@ -28,11 +28,14 @@ const BlogPage = ({ data }) => {
         <br></br>
         <h1>Hi people</h1>
         <p>Welcome to your new Gatsby blog with Markdown pages.</p>
-        <p>
-            <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link>
-            <br />
-            <Link to="/blog/spreadsheet/">Go to my second Markdown blog post called spreadsheet</Link>
-        </p>
+        <ul>
+            {posts.map(node => (
+                <li key={node.id}>
+                    <div>{node.frontmatter.title} - created on: {node.frontmatter.date}</div>
+                    <Link to={node.frontmatter.slug}>Go to post</Link>
+                </li>
+            ))}
+        </ul>
 
       </Layout>
     </>
