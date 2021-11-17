@@ -11,11 +11,7 @@ import ProjList from '../components/projlist'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { imgStyles, bsbutton } from './pages.module.css'
 
-
-// data
-
 // markup
-
 const MugShot = () => {
   return (
     <StaticImage className={imgStyles} src="../images/mugshot.png" alt="My Mugshot" />

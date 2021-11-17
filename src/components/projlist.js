@@ -4,7 +4,7 @@ import CallToAction from '../components/callToAction'
 import { StaticQuery, graphql } from "gatsby"
 
 // markup
-const ProjList = ({ data }) => {
+const ProjList = () => {
     return (
         <StaticQuery
             query={graphql`
