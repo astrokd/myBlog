@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Button } from 'react-bootstrap';
 // import { Link } from 'gatsby'
 import ProjList from '../components/projlist'
+import PostList from '../components/postlist'
 
 // styles
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -50,6 +51,8 @@ const IndexPage = () => {
         <MntRainer />
 
         <ProjList />
+
+        <PostList />
 
       </Layout>
     </>
