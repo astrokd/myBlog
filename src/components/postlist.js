@@ -4,11 +4,11 @@ import CallToAction from '../components/callToAction'
 import { StaticQuery, graphql } from "gatsby"
 
 // markup
-const ProjList = () => {
+const PostList = () => {
     return (
         <StaticQuery
             query={graphql`
-            query Projects {
+            query BlogPosts {
                 allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}) {
                     nodes {
                         html
@@ -33,7 +33,6 @@ const ProjList = () => {
                             <CallToAction>
                                 <div>{node.frontmatter.title} - created on: {node.frontmatter.date}</div>
                                 <Link to={node.frontmatter.slug}>Go to post</Link>
-                                <div>Tools used: {node.frontmatter.tools.toString()}</div>
                             </CallToAction>
                         </li>
 
@@ -46,4 +45,4 @@ const ProjList = () => {
     )
 }
 
-export default ProjList
+export default PostList
