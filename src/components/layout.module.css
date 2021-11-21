@@ -5,8 +5,7 @@
   font-Family: "-apple-system, Roboto, sans-serif, serif";
 }
 .headingStyles {
-  margin-Top: 0;
-  margin-Bottom: 32px;
+  margin: 0 32px 12px 12px;
   max-Width: 320px;
 }
 .subHeadingStyles {
