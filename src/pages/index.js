@@ -10,7 +10,7 @@ import PostList from '../components/postlist'
 
 // styles
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { imgStyles, bsbutton } from './pages.module.css'
+import { imgStyles, bsbutton, pageStyles } from './pages.module.css'
 
 // markup
 const MugShot = () => {
@@ -35,25 +35,26 @@ const IndexPage = () => {
     <>
       <Layout activelink="Home">
         <br></br>
-        <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
-        <MugShot />
+        <div className={pageStyles}>
+          <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
+          <MugShot />
 
-        <Button classname={bsbutton} variant="primary">Primary</Button>{' '}
+          <Button classname={bsbutton} variant="primary">Primary</Button>{' '}
 
-        <CallToAction>This is a Call To Action</CallToAction>
-        
-        <Bio showCount={20}>
+          <CallToAction>This is a Call To Action</CallToAction>
+          
+          <Bio showCount={20}>
 
-          This is my Bio, it will be an expandable bio, but right not it is just a simple div.
+            This is my Bio, it will be an expandable bio, but right not it is just a simple div.
 
-        </Bio>
+          </Bio>
 
-        <MntRainer />
+          <MntRainer />
 
-        <ProjList />
+          <ProjList />
 
-        <PostList />
-
+          <PostList />
+        </div>
       </Layout>
     </>
   )

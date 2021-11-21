@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "My GatsbyJS Test Blog",
+    title: "AstroKD Portfolio",
     description: "This blog site is built following the tutorial intro-workshop-gatsbyconf-2021 on gatsbyjs.io",
   },
   plugins: [
