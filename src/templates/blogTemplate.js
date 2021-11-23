@@ -55,6 +55,7 @@ export const pageQuery = graphql`
         type
         url
         tools
+        repo
       }
     }
   }
