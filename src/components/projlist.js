@@ -36,7 +36,7 @@ const ProjList = () => {
                             <CallToAction>
                                 <div>{node.frontmatter.title} - created on: {node.frontmatter.date}</div>
                                 <Link to={node.frontmatter.url}>Go to url</Link>
-                                <div>Tools used: {node.frontmatter.tools.toString()}</div>
+                                <div>Tools used: {node.frontmatter.tools.join(', ')}</div>
                             </CallToAction>
                         </li>
 
