@@ -2,18 +2,10 @@ import React from 'react'
 import NavBar from './navbar'
 import {Helmet} from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby"
+import Header from './header'
 
 // styles
 import { pageStyles, headingStyles, subHeadingStyles, paragraphStyles } from './layout.module.css'
-
-const Header = ( {title} ) => {
-  return (
-    <div>
-      <h1 className={headingStyles}>{title}</h1>
-      <p className={subHeadingStyles}>by KD</p>  
-    </div>
-  )
-}
 
 const Footer = () => {
   return (

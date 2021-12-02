@@ -37,6 +37,11 @@ const IndexPage = () => {
         <br></br>
         <div className={pageStyles}>
           <h3>Welcome to my Home Page, this is my porfolio of work.</h3>
+
+          <ProjList />
+
+          <PostList />
+          
           <MugShot />
 
           <Button classname={bsbutton} variant="primary">Primary</Button>{' '}
@@ -51,9 +56,6 @@ const IndexPage = () => {
 
           <MntRainer />
 
-          <ProjList />
-
-          <PostList />
         </div>
       </Layout>
     </>
